@@ -17,7 +17,7 @@ namespace Task2
             {
                 for (int j = 0; j < n; j++)
                 {
-                    array[i, j] = ((j % 2 != 0)|(i%2==0)) ? 1 : 0;
+                    array[i, j] = ((i+j) % 2 != 0) ? 0 : 1;
                     Console.Write("{0} ", array[i, j]);
                 }
                 Console.WriteLine();
